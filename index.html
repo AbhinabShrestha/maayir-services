@@ -1,0 +1,1711 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maayir Al Dhahab Technical Services L.L.C | UAE</title>
+    <meta
+      name="description"
+      content="Premium engineering, maintenance, and contracting services in the UAE. Discover the Gold Standard of technical services for residential and commercial spaces."
+    />
+    <meta
+      name="keywords"
+      content="Technical Services UAE, Dubai Contractor, Carpentry, Electrical, Plumbing, AC Maintenance, Luxury Renovation, Maayir Al Dhahab"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#0B1C2D",
+              gold: "#C9A84C",
+              warmwhite: "#F8F6F1",
+              charcoal: "#2C3E50",
+              goldtint: "#F5EDD6",
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', "serif"],
+              sans: ["Inter", "sans-serif"],
+              accent: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Premium Styles -->
+    <style>
+      @keyframes expandLine {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 120px;
+        }
+      }
+      .animate-gold-line {
+        animation: expandLine 1.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+      /* Scroll Triggered Animation Styles */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+          transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        will-change: transform, opacity;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .active-nav {
+        color: #c9a84c !important;
+        border-bottom: 2px solid #c9a84c;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-warmwhite text-charcoal font-sans antialiased overflow-x-hidden"
+  >
+    <!-- STICKY NAVIGATION BAR -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-md border-b border-gold/10 transition-all duration-300 py-4"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <!-- Text-Based Logo -->
+        <a href="#home" class="flex flex-col tracking-wide">
+          <span
+            class="font-display text-xl sm:text-2xl font-bold text-gold leading-none"
+            >MAAYIR AL DHAHAB</span
+          >
+          <span
+            class="font-accent text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-white/80 mt-1"
+            >Technical Services L.L.C</span
+          >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden lg:flex space-x-8 font-accent text-xs uppercase tracking-wider font-medium"
+        >
+          <a
+            href="#home"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >Services</a
+          >
+          <a
+            href="#whyus"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >Why Us</a
+          >
+          <a
+            href="#gallery"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >Gallery</a
+          >
+          <a
+            href="#contact"
+            class="nav-link text-white/90 hover:text-gold transition-colors duration-200 py-2"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden lg:block">
+          <a
+            href="#contact"
+            class="bg-gold text-navy hover:bg-white hover:text-navy transition-all duration-300 font-accent text-xs uppercase tracking-widest font-semibold px-5 py-3 rounded-none shadow-lg"
+          >
+            Get a Quote
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="lg:hidden text-white focus:outline-none p-2"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars text-2xl text-gold"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Slide-in Drawer Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-full max-w-sm bg-navy z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl border-l border-gold/20 flex flex-col justify-between p-6 lg:hidden"
+      >
+        <div>
+          <div
+            class="flex items-center justify-between pb-6 border-b border-white/10"
+          >
+            <div class="flex flex-col">
+              <span
+                class="font-display text-lg font-bold text-gold leading-none"
+                >MAAYIR AL DHAHAB</span
+              >
+              <span
+                class="font-accent text-[9px] uppercase tracking-[0.2em] text-white/70 mt-1"
+                >Technical Services</span
+              >
+            </div>
+            <button id="menu-close" class="text-white focus:outline-none p-2">
+              <i class="fa-solid fa-xmark text-2xl text-gold"></i>
+            </button>
+          </div>
+          <nav
+            class="flex flex-col space-y-6 mt-8 font-accent text-sm uppercase tracking-widest font-medium"
+          >
+            <a
+              href="#home"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >Services</a
+            >
+            <a
+              href="#whyus"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >Why Us</a
+            >
+            <a
+              href="#gallery"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="mobile-nav-link text-white hover:text-gold transition-colors"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="pt-6 border-t border-white/10">
+          <a
+            href="#contact"
+            class="mobile-nav-link w-full block text-center bg-gold text-navy font-accent text-xs uppercase tracking-widest font-bold py-4 shadow-lg"
+          >
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+      <!-- Drawer Overlay -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity duration-300 opacity-0"
+      ></div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section
+      id="home"
+      class="relative h-screen flex items-center justify-center bg-navy overflow-hidden"
+    >
+      <!-- Hero Background Image with Dark Opacity Overlay -->
+      <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-luminosity opacity-25"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/80 to-navy"
+      ></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 text-center mt-12">
+        <span
+          class="font-accent text-xs md:text-sm uppercase tracking-[0.4em] text-gold font-semibold block mb-4"
+          >THE GOLD STANDARD OF CRAFTSMANSHIP</span
+        >
+        <h1
+          class="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-6"
+        >
+          Gold Standard Technical Services <br class="hidden md:inline" />in the
+          UAE
+        </h1>
+
+        <!-- Signature Animated Gold Line -->
+        <div
+          class="h-[3px] bg-gold mx-auto mb-8 animate-gold-line rounded-full"
+        ></div>
+
+        <p
+          class="font-sans text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-light leading-relaxed mb-12"
+        >
+          From precision electromechanical installation to bespoke architectural
+          ornamentation—we orchestrate elite engineering and property
+          maintenance solutions across the Emirates.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+        >
+          <a
+            href="#services"
+            class="w-full sm:w-auto bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-navy transition-all duration-300 font-accent text-xs uppercase tracking-widest font-semibold px-8 py-4"
+          >
+            Explore Our Services
+          </a>
+          <a
+            href="#contact"
+            class="w-full sm:w-auto bg-gold border-2 border-gold text-navy hover:bg-white hover:border-white transition-all duration-300 font-accent text-xs uppercase tracking-widest font-semibold px-8 py-4 shadow-xl"
+          >
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Animated Scroll Down Arrow -->
+      <div
+        class="absolute bottom-8 left-1/12 transform -translate-x-1/2 z-10 flex flex-col items-center animate-bounce"
+      >
+        <!-- <span class="font-accent text-[9px] uppercase tracking-widest text-white/40 mb-2">Scroll Down</span> -->
+        <a href="#about" class="text-gold/60 hover:text-gold transition-colors">
+          <i class="fa-solid fa-chevron-down text-lg"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="py-24 bg-warmwhite reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+        >
+          <!-- Left: Content Info Text -->
+          <div class="lg:col-span-7">
+            <span
+              class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+              >WHO WE ARE</span
+            >
+            <h2
+              class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6 border-b-2 border-gold/20 pb-4 inline-block"
+            >
+              Uncompromising Precision, Absolute Trust
+            </h2>
+            <p
+              class="text-charcoal text-base md:text-lg leading-relaxed font-light mb-6"
+            >
+              <strong>Maayir Al Dhahab Technical Services L.L.C</strong>
+              translates directly from Arabic as <em>"Gold Standards."</em> True
+              to our name, we have established ourselves as one of the premier
+              trusted contractors within the UAE, delivering flawless technical
+              executions across residential complexes, state-of-the-art
+              commercial hubs, and complex industrial spaces.
+            </p>
+            <p
+              class="text-charcoal/90 text-base leading-relaxed font-light mb-8"
+            >
+              Our engineering and maintenance methodologies incorporate
+              state-of-the-art diagnostic instruments alongside generations of
+              artisanal skills. Whether optimizing automated climate management
+              systems, structural partitioning, or executing intricate tiling
+              works, we treat every asset with elite precision.
+            </p>
+
+            <!-- Contact Info Strip -->
+            <div
+              class="bg-white p-4 border-l-4 border-gold shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            >
+              <div>
+                <span
+                  class="font-accent text-[11px] uppercase tracking-wider text-charcoal/60 block"
+                  >Direct Inquiry Hotline</span
+                >
+                <a
+                  href="tel:+971523546775"
+                  class="font-display text-lg font-bold text-navy hover:text-gold transition-colors"
+                  >+971 52 354 6775</a
+                >
+              </div>
+              <div class="sm:text-right">
+                <span
+                  class="font-accent text-[11px] uppercase tracking-wider text-charcoal/60 block"
+                  >Corporate Portal</span
+                >
+                <span class="font-sans text-sm text-charcoal font-medium"
+                  >www.maayirtechnical.com</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Stat Grid Decorative Display -->
+          <div
+            class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6"
+          >
+            <div
+              class="bg-navy p-8 text-center border-b-4 border-gold shadow-xl"
+            >
+              <span
+                class="block font-display text-4xl sm:text-5xl font-bold text-gold mb-2"
+                data-target="12"
+                data-suffix="+"
+                >0+</span
+              >
+              <span
+                class="block font-accent text-xs uppercase tracking-widest text-white/90 font-medium"
+                >Core Technical Services</span
+              >
+            </div>
+            <div
+              class="bg-white p-8 text-center border-b-4 border-navy shadow-lg"
+            >
+              <div class="text-gold text-3xl mb-2">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span
+                class="block font-display text-xl font-semibold text-navy mb-1"
+                >Licensed & Insured</span
+              >
+              <span class="block font-sans text-xs text-charcoal/70"
+                >Compliant with absolute UAE Regulations</span
+              >
+            </div>
+            <div
+              class="bg-white p-8 text-center border-b-4 border-navy shadow-lg sm:col-span-2 lg:col-span-1"
+            >
+              <span
+                class="block font-display text-4xl sm:text-5xl font-bold text-navy mb-2"
+                data-target="500"
+                data-suffix="+"
+                >0+</span
+              >
+              <span
+                class="block font-accent text-xs uppercase tracking-widest text-charcoal/80 font-medium"
+                >Properties Perfected in UAE</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="services" class="py-24 bg-white reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+            >OUR CAPABILITIES</span
+          >
+          <h2
+            class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4"
+          >
+            Our Comprehensive Services
+          </h2>
+          <div class="h-[2px] bg-gold w-24 mx-auto mb-6"></div>
+          <p class="text-charcoal/80 font-light">
+            Every division operates under rigorous workflows to secure seamless
+            results, regulatory structural alignment, and premium luxury
+            finishes.
+          </p>
+        </div>
+
+        <!-- Responsive 3-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                1. Engraving & Ornamentation Works
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Bespoke intricate relief carvings, architectural motifs, gypsum
+                accents, and high-end cultural designs crafted by masters.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                2. Electromechanical Equipment Installation & Maintenance
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Industrial and heavy asset assemblies, systematic alignments,
+                switchgear setups, and lifecycle preventative operations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-hammer"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                3. Carpentry & Wood Flooring Works
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Premium parquet assemblies, customized fit-outs, luxury
+                cabinetry installations, and structural timber framework
+                finishing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-faucet-drip"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                4. Sanitary Installation & Pipes Repairing
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Advanced copper/PPR network design, diagnostic high-pressure
+                leakage resolution, and luxury sanitary integration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-border-all"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                5. Floor & Wall Tiling Works
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Laser-guided layouts for luxury marble, large-format porcelain
+                slabs, and glass mosaics with structural water-tight grouting.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-faucet"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                6. Plumbing & Sanitary Installation
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Comprehensive greywater infrastructure, drainage engineering,
+                and elite booster pump installations for high-rise or villa
+                frameworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 7 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-wind"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                7. Air-Conditioning, Ventilations & Air Filtration Systems
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Precision Chiller, VRF, and FCU engineering, chemical
+                sanitization, and high-efficiency HEPA air filter lifecycle
+                updates.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 8 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-table-cells-large"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                8. False Ceiling & Light Partitions Installation
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Acoustic panel balancing, fire-rated gypsum board drywall
+                designs, and hidden shadow-gap profile framing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 9 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                9. Electrical Fittings & Fixtures Repairing & Maintenance
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Load balancing calculations, luxury smart illumination
+                integrations, distribution board upgrades, and detailed safety
+                audits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 10 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-sparkles"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                10. Building Cleaning Services
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Post-construction deep sanitization, exterior glass cleaning,
+                and commercial-grade high-pressure facility detailing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 11 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-fill-drip"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                11. Plaster Works
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                High-caliber rendering, Venetian plaster overlays, decorative
+                stucco, and absolute flush alignment of uneven base blockworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 12 -->
+          <div
+            class="group bg-warmwhite p-8 border border-transparent hover:border-gold hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-gold text-3xl mb-6">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3
+                class="font-display text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200"
+              >
+                12. General Maintenance & Renovation
+              </h3>
+              <p class="text-charcoal/80 text-sm font-light leading-relaxed">
+                Full turnkey residential asset restorations, comprehensive
+                structural modernizations, and responsive Annual Maintenance
+                Contracts (AMC).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US SECTION -->
+    <section id="whyus" class="py-24 bg-navy text-white relative reveal">
+      <!-- Accent decorative geometry -->
+      <div
+        class="absolute top-0 right-0 w-32 h-32 border-r-2 border-t-2 border-gold/10 pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-gold/10 pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+            >ENGINEERING EXCELLENCE</span
+          >
+          <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">
+            Why Discerning Property Owners Choose Us
+          </h2>
+          <div class="h-[2px] bg-gold w-24 mx-auto"></div>
+        </div>
+
+        <!-- 2x2 Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <!-- Factor 1 -->
+          <div
+            class="flex gap-4 p-6 bg-white/5 border border-white/10 hover:border-gold/40 transition-colors duration-300"
+          >
+            <div class="text-gold text-2xl mt-1 shrink-0">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold mb-2">
+                Licensed & Certified
+              </h3>
+              <p class="text-white/70 text-sm font-light leading-relaxed">
+                We operate in absolute structural lockstep with Dubai
+                Municipality, DED guidelines, and stringent federal UAE
+                technical regulations, reducing liability to absolute zero.
+              </p>
+            </div>
+          </div>
+
+          <!-- Factor 2 -->
+          <div
+            class="flex gap-4 p-6 bg-white/5 border border-white/10 hover:border-gold/40 transition-colors duration-300"
+          >
+            <div class="text-gold text-2xl mt-1 shrink-0">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold mb-2">
+                Fast Response
+              </h3>
+              <p class="text-white/70 text-sm font-light leading-relaxed">
+                Our strategically positioned rapid-mobilization fleet is
+                equipped to execute comprehensive structural assessments and
+                emergency repairs within 24 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- Factor 3 -->
+          <div
+            class="flex gap-4 p-6 bg-white/5 border border-white/10 hover:border-gold/40 transition-colors duration-300"
+          >
+            <div class="text-gold text-2xl mt-1 shrink-0">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold mb-2">
+                Premium Quality
+              </h3>
+              <p class="text-white/70 text-sm font-light leading-relaxed">
+                True to the standard of pure gold, we source raw components
+                exclusively from top-tier European and regional manufacturers,
+                backed by material warranty protection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Factor 4 -->
+          <div
+            class="flex gap-4 p-6 bg-white/5 border border-white/10 hover:border-gold/40 transition-colors duration-300"
+          >
+            <div class="text-gold text-2xl mt-1 shrink-0">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold mb-2">
+                End-to-End Service
+              </h3>
+              <p class="text-white/70 text-sm font-light leading-relaxed">
+                We orchestrate your entire roadmap. From custom planning and
+                authority permits to hands-on deployment and final engineering
+                sign-off.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS SECTION -->
+    <section class="py-24 bg-goldtint relative reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+            >OPERATIONAL WORKFLOW</span
+          >
+          <h2
+            class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4"
+          >
+            Our Streamlined Execution
+          </h2>
+          <div class="h-[2px] bg-gold w-24 mx-auto"></div>
+        </div>
+
+        <!-- 3-Step Process Timeline -->
+        <div
+          class="relative flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 max-w-5xl mx-auto"
+        >
+          <!-- Desktop Connection Line -->
+          <div
+            class="hidden lg:block absolute top-12 left-[10%] right-[10%] h-[1px] border-t border-dashed border-navy/30 z-0"
+          ></div>
+
+          <!-- Step 1 -->
+          <div
+            class="relative z-10 flex flex-col items-center text-center lg:w-1/3 group"
+          >
+            <div
+              class="w-20 h-20 rounded-full bg-navy text-gold font-display text-2xl font-bold flex items-center justify-center border-4 border-white shadow-xl group-hover:bg-gold group-hover:text-navy transition-all duration-300 mb-6"
+            >
+              01
+            </div>
+            <h3 class="font-display text-lg font-bold text-navy mb-2">
+              Step 1: Contact Us
+            </h3>
+            <p class="text-charcoal/80 text-sm font-light max-w-xs">
+              Initiate communication via web portal, hotlines, or immediate
+              WhatsApp coordinates to schedule a prompt consultation.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="relative z-10 flex flex-col items-center text-center lg:w-1/3 group"
+          >
+            <div
+              class="w-20 h-20 rounded-full bg-navy text-gold font-display text-2xl font-bold flex items-center justify-center border-4 border-white shadow-xl group-hover:bg-gold group-hover:text-navy transition-all duration-300 mb-6"
+            >
+              02
+            </div>
+            <h3 class="font-display text-lg font-bold text-navy mb-2">
+              Step 2: Site Assessment
+            </h3>
+            <p class="text-charcoal/80 text-sm font-light max-w-xs">
+              Our engineers arrive on site with comprehensive diagnostic
+              apparatus to verify physical layout metrics and detail costs.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="relative z-10 flex flex-col items-center text-center lg:w-1/3 group"
+          >
+            <div
+              class="w-20 h-20 rounded-full bg-navy text-gold font-display text-2xl font-bold flex items-center justify-center border-4 border-white shadow-xl group-hover:bg-gold group-hover:text-navy transition-all duration-300 mb-6"
+            >
+              03
+            </div>
+            <h3 class="font-display text-lg font-bold text-navy mb-2">
+              Step 3: Work Begins
+            </h3>
+            <p class="text-charcoal/80 text-sm font-light max-w-xs">
+              Project technicians launch deployment matching strict deadlines
+              under dedicated project-manager leadership parameters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION -->
+    <section class="py-24 bg-warmwhite reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+            >VERIFIED REPUTATION</span
+          >
+          <h2
+            class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4"
+          >
+            Client Testimonials
+          </h2>
+          <div class="h-[2px] bg-gold w-24 mx-auto"></div>
+        </div>
+
+        <!-- Testimonial Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-8 shadow-md border-t-4 border-gold relative flex flex-col justify-between"
+          >
+            <div
+              class="absolute top-6 right-6 text-gold/10 text-5xl font-serif pointer-events-none"
+            >
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+              <div class="text-gold flex gap-1 mb-4 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-charcoal/90 text-sm font-light italic leading-relaxed mb-6"
+              >
+                "The electromechanical team from Maayir Al Dhahab resolved
+                complex central AC loading issues that two previous contractors
+                failed to debug. Absolute engineering masters."
+              </p>
+            </div>
+            <div class="border-t border-charcoal/10 pt-4">
+              <h4 class="font-display text-base font-bold text-navy">
+                Tariq Al Mansoori
+              </h4>
+              <span
+                class="font-accent text-[10px] uppercase text-charcoal/50 tracking-wider"
+                >Penthouse Owner, Dubai Marina</span
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-8 shadow-md border-t-4 border-navy relative flex flex-col justify-between"
+          >
+            <div
+              class="absolute top-6 right-6 text-gold/10 text-5xl font-serif pointer-events-none"
+            >
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+              <div class="text-gold flex gap-1 mb-4 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-charcoal/90 text-sm font-light italic leading-relaxed mb-6"
+              >
+                "Their carpentry and luxury wall tiling transformed our
+                commercial showroom within Downtown Dubai ahead of schedule. The
+                finish matches international gold standards."
+              </p>
+            </div>
+            <div class="border-t border-charcoal/10 pt-4">
+              <h4 class="font-display text-base font-bold text-navy">
+                Elena Rostova
+              </h4>
+              <span
+                class="font-accent text-[10px] uppercase text-charcoal/50 tracking-wider"
+                >Managing Director, LuxInteriors L.L.C</span
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-8 shadow-md border-t-4 border-gold relative flex flex-col justify-between"
+          >
+            <div
+              class="absolute top-6 right-6 text-gold/10 text-5xl font-serif pointer-events-none"
+            >
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+              <div class="text-gold flex gap-1 mb-4 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-charcoal/90 text-sm font-light italic leading-relaxed mb-6"
+              >
+                "We contract Maayir Al Dhahab for annual general building
+                maintenance and cleaning. Exceptional communication, prompt
+                attendance, and thorough engineering execution."
+              </p>
+            </div>
+            <div class="border-t border-charcoal/10 pt-4">
+              <h4 class="font-display text-base font-bold text-navy">
+                Sarah Ahmed
+              </h4>
+              <span
+                class="font-accent text-[10px] uppercase text-charcoal/50 tracking-wider"
+                >Operations Manager, Emirates Asset Properties</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GALLERY / PORTFOLIO SECTION -->
+    <section id="gallery" class="py-24 bg-white reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="font-accent text-xs uppercase tracking-[0.3em] text-gold font-bold block mb-2"
+            >VISUAL PORTFOLIO</span
+          >
+          <h2
+            class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4"
+          >
+            Our Completed Projects
+          </h2>
+          <div class="h-[2px] bg-gold w-24 mx-auto mb-6"></div>
+          <p class="text-charcoal/80 font-light">
+            A curated showcase of precision structural interventions executed
+            seamlessly across luxury properties in the UAE.
+          </p>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Gallery Item 1 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="images/carpentry-work.jpg"
+              alt="Carpentry Work"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >Custom Fit-outs</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                Carpentry Work
+              </h4>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=80"
+              alt="Tiling Project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >Premium Finishes</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                Tiling Project
+              </h4>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="images/ac-installation.jpg"
+              alt="AC Installation"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >HVAC Systems</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                AC Installation
+              </h4>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80"
+              alt="Plaster Finish"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >Drywall & Render</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                Plaster Finish
+              </h4>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="images/electrical-work.jpg"
+              alt="Electrical Work"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >Grid Systems</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                Electrical Work
+              </h4>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="relative group overflow-hidden bg-navy h-72 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80"
+              alt="Cleaning Service"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span
+                class="font-accent text-[9px] uppercase tracking-widest text-gold block mb-1"
+                >Deep Sanitization</span
+              >
+              <h4 class="font-display text-lg font-bold text-white">
+                Cleaning Service
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-warmwhite reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <!-- Left: Contact Form -->
+          <div
+            class="lg:col-span-7 bg-white p-8 sm:p-10 shadow-xl border-t-4 border-gold"
+          >
+            <h3 class="font-display text-2xl font-bold text-navy mb-2">
+              Request an Immediate Quotation
+            </h3>
+            <p class="text-charcoal/70 text-sm font-light mb-8">
+              Submit your structural requirements below. Our engineering desk
+              will review and reach back promptly.
+            </p>
+
+            <!-- Alert Message Placeholder Container -->
+            <div
+              id="form-alert"
+              class="hidden mb-6 p-4 text-sm font-medium"
+            ></div>
+
+            <form id="quoteForm" class="space-y-6" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    class="block font-accent text-[11px] uppercase tracking-wider text-charcoal/80 mb-2 font-medium"
+                    >Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="form-name"
+                    class="w-full border-b-2 border-charcoal/15 focus:border-gold focus:outline-none p-3 transition-colors text-sm bg-warmwhite/30"
+                    placeholder="e.g. Tariq Ahmed"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block font-accent text-[11px] uppercase tracking-wider text-charcoal/80 mb-2 font-medium"
+                    >Phone Number (UAE) *</label
+                  >
+                  <input
+                    type="tel"
+                    id="form-phone"
+                    class="w-full border-b-2 border-charcoal/15 focus:border-gold focus:outline-none p-3 transition-colors text-sm bg-warmwhite/30"
+                    placeholder="e.g. +971 52 354 6775"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  class="block font-accent text-[11px] uppercase tracking-wider text-charcoal/80 mb-2 font-medium"
+                  >Email Address *</label
+                >
+                <input
+                  type="email"
+                  id="form-email"
+                  class="w-full border-b-2 border-charcoal/15 focus:border-gold focus:outline-none p-3 transition-colors text-sm bg-warmwhite/30"
+                  placeholder="e.g. corporate@domain.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block font-accent text-[11px] uppercase tracking-wider text-charcoal/80 mb-2 font-medium"
+                  >Service Required *</label
+                >
+                <select
+                  id="form-service"
+                  class="w-full border-b-2 border-charcoal/15 focus:border-gold focus:outline-none p-3 transition-colors text-sm bg-warmwhite/30 text-charcoal/80"
+                >
+                  <option value="" disabled selected>
+                    Select from 12 Core Capabilities
+                  </option>
+                  <option value="Engraving & Ornamentation Works">
+                    Engraving & Ornamentation Works
+                  </option>
+                  <option
+                    value="Electromechanical Equipment Installation & Maintenance"
+                  >
+                    Electromechanical Equipment Installation & Maintenance
+                  </option>
+                  <option value="Carpentry & Wood Flooring Works">
+                    Carpentry & Wood Flooring Works
+                  </option>
+                  <option value="Sanitary Installation & Pipes Repairing">
+                    Sanitary Installation & Pipes Repairing
+                  </option>
+                  <option value="Floor & Wall Tiling Works">
+                    Floor & Wall Tiling Works
+                  </option>
+                  <option value="Plumbing & Sanitary Installation">
+                    Plumbing & Sanitary Installation
+                  </option>
+                  <option
+                    value="Air-Conditioning, Ventilations & Air Filtration Systems Installation & Maintenance"
+                  >
+                    Air-Conditioning, Ventilations & Air Filtration Systems
+                    Installation & Maintenance
+                  </option>
+                  <option value="False Ceiling & Light Partitions Installation">
+                    False Ceiling & Light Partitions Installation
+                  </option>
+                  <option
+                    value="Electrical Fittings & Fixtures Repairing & Maintenance"
+                  >
+                    Electrical Fittings & Fixtures Repairing & Maintenance
+                  </option>
+                  <option value="Building Cleaning Services">
+                    Building Cleaning Services
+                  </option>
+                  <option value="Plaster Works">Plaster Works</option>
+                  <option value="General Maintenance & Renovation">
+                    General Maintenance & Renovation
+                  </option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  class="block font-accent text-[11px] uppercase tracking-wider text-charcoal/80 mb-2 font-medium"
+                  >Detailed Message / Scope of Work *</label
+                >
+                <textarea
+                  id="form-message"
+                  rows="4"
+                  class="w-full border-b-2 border-charcoal/15 focus:border-gold focus:outline-none p-3 transition-colors text-sm bg-warmwhite/30 resize-none"
+                  placeholder="Describe the engineering specifications or asset scale..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-navy text-gold hover:bg-gold hover:text-navy transition-all duration-300 font-accent text-xs uppercase tracking-widest font-bold py-4 shadow-lg"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Contact Info & Maps Mock -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+            <div class="bg-navy p-8 text-white border-l-4 border-gold">
+              <h4 class="font-display text-xl font-bold text-gold mb-6">
+                Headquarters Contact
+              </h4>
+              <div class="space-y-4 font-sans text-sm font-light">
+                <div class="flex items-start gap-3">
+                  <i
+                    class="fa-solid fa-location-dot text-gold mt-1 shrink-0"
+                  ></i>
+                  <p class="text-white/80 leading-relaxed">
+                    <strong>MAAYIR AL DHAHAB TECHNICAL SERVICES L.L.C</strong
+                    ><br />
+                    Business Bay, Commercial District,<br />
+                    Dubai, United Arab Emirates
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-phone text-gold shrink-0"></i>
+                  <a
+                    href="tel:+971523546775"
+                    class="text-white/80 hover:text-gold transition-colors"
+                    >+971 52 354 6775</a
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-print text-gold shrink-0"></i>
+                  <span class="text-white/40"
+                    >Fax: Available upon corporate request</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- High-End Google Maps Placeholder -->
+            <div
+              class="relative bg-navy/20 h-64 border border-charcoal/10 shadow-inner overflow-hidden flex items-center justify-center group"
+            >
+              <div
+                class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-30 filter grayscale mix-blend-overlay"
+              ></div>
+              <div class="relative z-10 text-center px-4">
+                <div class="text-navy text-3xl mb-2">
+                  <i class="fa-solid fa-map-location-dot text-gold"></i>
+                </div>
+                <span
+                  class="block font-accent text-xs uppercase tracking-widest text-navy font-bold"
+                  >Dubai, UAE</span
+                >
+                <span class="block text-xs text-charcoal/70 font-light mt-1"
+                  >Satellite Mapping System Active</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-navy text-white border-t border-gold/10">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-12 gap-12 font-sans text-sm font-light"
+      >
+        <!-- Column 1: Brand details -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex flex-col tracking-wide">
+            <span class="font-display text-2xl font-bold text-gold leading-none"
+              >MAAYIR AL DHAHAB</span
+            >
+            <span
+              class="font-accent text-[10px] uppercase tracking-[0.25em] text-white/70 mt-1"
+              >Technical Services L.L.C</span
+            >
+          </div>
+          <p class="text-white/60 max-w-sm leading-relaxed">
+            Precision. Quality. Gold Standards. Providing top-tier commercial
+            and residential technical assets operations cross-borders within the
+            Emirates.
+          </p>
+          <div class="pt-2 text-gold font-display font-semibold text-base">
+            Hotline:
+            <a href="tel:+971523546775" class="hover:underline"
+              >+971 52 354 6775</a
+            >
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4
+            class="font-accent text-xs uppercase tracking-widest text-gold font-bold"
+          >
+            Navigation
+          </h4>
+          <ul class="space-y-2 text-white/70">
+            <li>
+              <a href="#home" class="hover:text-gold transition-colors"
+                >Home Base</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-gold transition-colors"
+                >Corporate Identity</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-gold transition-colors"
+                >Core Disciplines</a
+              >
+            </li>
+            <li>
+              <a href="#whyus" class="hover:text-gold transition-colors"
+                >Why Our Framework</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" class="hover:text-gold transition-colors"
+                >Asset Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-gold transition-colors"
+                >Permits & Inquiries</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services Short Column -->
+        <div class="md:col-span-4 space-y-4">
+          <h4
+            class="font-accent text-xs uppercase tracking-widest text-gold font-bold"
+          >
+            Key Focus Areas
+          </h4>
+          <ul class="space-y-2 text-white/60 text-xs">
+            <li>• Electromechanical Equipment Assemblies</li>
+            <li>• Luxury Parquet & Carpentry Works</li>
+            <li>• High-Pressure Sanitary Infrastructure</li>
+            <li>• Advanced HVAC Chiller Operations</li>
+            <li>• Drywall, Plaster & Ornamentation Works</li>
+            <li>• Comprehensive General Maintenance Contracts</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="border-t border-white/5 bg-navy/80 py-6 text-center font-accent text-[11px] uppercase tracking-wider text-white/40"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p>
+            © 2025 Maayir Al Dhahab Technical Services L.L.C. All Rights
+            Reserved.
+          </p>
+          <div class="flex gap-4 text-white/50 text-xs">
+            <a href="#" class="hover:text-gold"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="hover:text-gold"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-gold"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING FEATURES -->
+    <!-- Fixed WhatsApp Widget Button -->
+    <a
+      href="https://wa.me/971523546775"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+      <span
+        class="absolute right-16 bg-navy text-gold font-accent text-[10px] uppercase tracking-wider font-semibold px-3 py-1.5 shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        >WhatsApp Engineering Desk</span
+      >
+    </a>
+
+    <!-- Smooth Back To Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-24 right-6 z-50 bg-gold text-navy w-10 h-10 rounded-none flex items-center justify-center shadow-xl opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:bg-white"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- VANILLA JAVASCRIPT SYSTEM LOGIC -->
+    <script>
+      // --- ANIMATED NUMBER COUNTERS ---
+      const animateCounter = (el, target, duration = 2000) => {
+        let start = 0;
+        const suffix = el.dataset.suffix || "";
+        const step = target / (duration / 16);
+        const timer = setInterval(() => {
+          start += step;
+          if (start >= target) {
+            el.textContent = target + suffix;
+            clearInterval(timer);
+          } else {
+            el.textContent = Math.floor(start) + suffix;
+          }
+        }, 16);
+      };
+
+      const counterObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const target = parseInt(el.dataset.target);
+              animateCounter(el, target);
+              observer.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+
+      document
+        .querySelectorAll("[data-target]")
+        .forEach((el) => counterObserver.observe(el));
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- MOBILE MENU DRAWER LOGIC ---
+        const menuBtn = document.getElementById("menu-btn");
+        const menuClose = document.getElementById("menu-close");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuOverlay = document.getElementById("menu-overlay");
+        const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+        const openMenu = () => {
+          mobileMenu.classList.remove("translate-x-full");
+          menuOverlay.classList.remove("hidden");
+          setTimeout(() => menuOverlay.classList.add("opacity-100"), 10);
+        };
+
+        const closeMenu = () => {
+          mobileMenu.classList.add("translate-x-full");
+          menuOverlay.classList.remove("opacity-100");
+          setTimeout(() => menuOverlay.classList.add("hidden"), 300);
+        };
+
+        menuBtn.addEventListener("click", openMenu);
+        menuClose.addEventListener("click", closeMenu);
+        menuOverlay.addEventListener("click", closeMenu);
+        mobileLinks.forEach((link) =>
+          link.addEventListener("click", closeMenu),
+        );
+
+        // --- SCROLL ANIMATIONS (INTERSECTION OBSERVER) ---
+        const revealElements = document.querySelectorAll(".reveal");
+        const observerOptions = {
+          root: null,
+          threshold: 0.12,
+          rootMargin: "0px 0px -20px 0px",
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target); // Optimize DOM tracking lifecycle
+            }
+          });
+        }, observerOptions);
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+
+        // --- ACTIVE NAVIGATION LINK HIGHLIGHTING & NAVBAR SIZING ---
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+          let currentSectionId = "";
+          const scrollPosition = window.scrollY + 120;
+
+          // Toggle Sticky Navbar sizing height metrics
+          if (window.scrollY > 50) {
+            navbar.classList.remove("py-4");
+            navbar.classList.add("py-2.5", "shadow-2xl");
+          } else {
+            navbar.classList.remove("py-2.5", "shadow-2xl");
+            navbar.classList.add("py-4");
+          }
+
+          // Identify Active Target Section Element
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              currentSectionId = section.getAttribute("id");
+            }
+          });
+
+          // Set Active Link State Styles UI
+          navLinks.forEach((link) => {
+            link.classList.remove("active-nav");
+            if (link.getAttribute("href") === `#${currentSectionId}`) {
+              link.classList.add("active-nav");
+            }
+          });
+
+          // --- BACK TO TOP INTERACTIVE TOGGLE ---
+          const backToTopBtn = document.getElementById("backToTop");
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.remove(
+              "opacity-0",
+              "translate-y-10",
+              "pointer-events-none",
+            );
+          } else {
+            backToTopBtn.classList.add(
+              "opacity-0",
+              "translate-y-10",
+              "pointer-events-none",
+            );
+          }
+        });
+
+        document.getElementById("backToTop").addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // --- REVENUE-READY FORM VALIDATION DESK ---
+        const form = document.getElementById("quoteForm");
+        const formAlert = document.getElementById("form-alert");
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          // Fetch elements
+          const name = document.getElementById("form-name").value.trim();
+          const phone = document.getElementById("form-phone").value.trim();
+          const email = document.getElementById("form-email").value.trim();
+          const service = document.getElementById("form-service").value;
+          const message = document.getElementById("form-message").value.trim();
+
+          // Simple structural validation metrics
+          if (!name || !phone || !email || !service || !message) {
+            displayAlert(
+              "Error: Please complete all mandatory inputs marked (*).",
+              "danger",
+            );
+            return;
+          }
+
+          if (!validateEmail(email)) {
+            displayAlert(
+              "Error: Please input a valid corporate email structure.",
+              "danger",
+            );
+            return;
+          }
+
+          // Simulate Successful Network Delivery Pipeline
+          displayAlert(
+            "Success! Your inquiry matches validation. Our engineering desk is processing scope metrics.",
+            "success",
+          );
+          form.reset();
+        });
+
+        function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+        }
+
+        function displayAlert(msg, type) {
+          formAlert.innerText = msg;
+          formAlert.classList.remove(
+            "hidden",
+            "bg-red-100",
+            "text-red-800",
+            "bg-green-100",
+            "text-green-800",
+            "border-l-4",
+            "border-red-500",
+            "border-green-500",
+          );
+
+          if (type === "danger") {
+            formAlert.classList.add(
+              "bg-red-100",
+              "text-red-800",
+              "border-l-4",
+              "border-red-500",
+            );
+          } else {
+            formAlert.classList.add(
+              "bg-green-100",
+              "text-green-800",
+              "border-l-4",
+              "border-green-500",
+            );
+          }
+          formAlert.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      });
+    </script>
+  </body>
+</html>
